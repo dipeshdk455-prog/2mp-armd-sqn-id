@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCC Cadet Digital ID | CADET ID CARD - 2 MP ARMOURED SQUADRON NCC INDORE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.35) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(220, 38, 38, 0.2) 0px, transparent 50%);
+    }
+    .font-mono-id {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Official NCC Tri-Color Stripe (Red, Dark Blue, Sky Blue) */
+    .ncc-tricolor {
+      background: linear-gradient(90deg, #dc2626 0%, #dc2626 33.33%, #1e3a8a 33.33%, #1e3a8a 66.66%, #0284c7 66.66%, #0284c7 100%);
+    }
+    /* Subtle Security Micro-Grid Pattern */
+    .security-pattern {
+      background-image: radial-gradient(#cbd5e1 0.85px, transparent 0.85px);
+      background-size: 16px 16px;
+    }
+    /* Subtle NCC Crest Watermark */
+    .watermark-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7.5rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      color: rgba(30, 58, 138, 0.035);
+      pointer-events: none;
+      user-select: none;
+      transform: rotate(-12deg);
+    }
+    /* Blinking Verified Tick on Cadet Name */
+    @keyframes verifiedNameBlink {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.7));
+      }
+      50% {
+        opacity: 0.3;
+        transform: scale(0.92);
+        filter: drop-shadow(0 0 0px rgba(37, 99, 235, 0));
+      }
+    }
+    .animate-verified-tick {
+      animation: verifiedNameBlink 1.4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-3 sm:p-6">
+
+  <!-- Official NCC Cadet Digital Identity Card -->
+  <article class="w-full max-w-4xl bg-white rounded-3xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.65)] overflow-hidden border border-slate-300/80 relative">
+    
+    <!-- Top NCC Tri-Color Ribbon -->
+    <div class="ncc-tricolor h-3 w-full"></div>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-900 text-white p-5 sm:px-8 sm:py-6 relative overflow-hidden">
+      <!-- Decorative diagonal accent -->
+      <div class="absolute right-0 top-0 h-full w-48 bg-gradient-to-l from-sky-500/10 to-transparent pointer-events-none"></div>
+
+      <!-- Top Utility Bar -->
+      <div class="flex items-center justify-between gap-2 pb-4 mb-4 border-b border-white/10 relative z-10">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-sky-300">
+          Official Digital Identity Card
+        </span>
+      </div>
+
+      <!-- Main Unit & Camp Info -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
+        <div class="flex items-center gap-3.5">
+          <!-- NCC Shield Emblem -->
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm flex flex-col items-center justify-center shrink-0 shadow-inner">
+            <span class="text-[10px] font-black tracking-widest text-amber-400 leading-none">NCC</span>
+            <div class="w-7 h-1.5 rounded-full ncc-tricolor my-1"></div>
+            <span class="text-[8px] font-bold text-sky-200 tracking-wider leading-none">INDIA</span>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] font-extrabold tracking-[0.18em] text-sky-300 uppercase">National Cadet Corps</span>
+              <span class="hidden sm:inline-block text-slate-500">•</span>
+              <span class="hidden sm:inline-block text-[11px] font-semibold tracking-wider text-amber-300/90 uppercase">Unity & Discipline</span>
+            </div>
+            <h1 class="text-lg sm:text-xl md:text-2xl font-black tracking-wide text-white mt-0.5">2 MP ARMOURED SQUADRON NCC INDORE</h1>
+          </div>
+        </div>
+
+        <!-- Camp / Attachment Pill -->
+        <div class="self-start sm:self-center shrink-0">
+          <span class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 sm:text-right mb-1">Purpose of Issue </span>
+          <div class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-amber-300 text-slate-950 px-4 py-1.5 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wide shadow-md">
+            <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+            <span>FOR IMA ATTACHMENT CAMP DEHRADUN</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Security Body -->
+    <div class="p-5 sm:p-8 space-y-6 relative security-pattern">
+      <div class="watermark-text">NCC INDIA</div>
+
+      <!-- Top Profile & Credentials Banner -->
+      <div class="relative z-10 bg-white/95 backdrop-blur-sm border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col sm:flex-row items-center gap-6">
+        
+        <!-- Cadet Portrait (Verified Tick Removed) -->
+        <div class="relative shrink-0">
+          <div class="p-1 rounded-2xl bg-gradient-to-br from-red-600 via-blue-900 to-sky-500 shadow-lg">
+            <img 
+              src="nitin.jpg" 
+              alt="NITIN TIWARI" 
+              class="w-32 h-36 sm:w-36 sm:h-40 object-cover rounded-xl bg-slate-100" 
+              onerror="this.onerror=null; this.src='https://placehold.co/144x160/1E3A8A/FFFFFF?text=NT';"
+            >
+          </div>
+        </div>
+
+        <!-- Cadet Core Info -->
+        <div class="flex-1 text-center sm:text-left w-full">
+          <!-- Rank, Blood Group & Active Status -->
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+            <span class="bg-blue-950 text-white text-xs font-extrabold px-3 py-1 rounded-lg tracking-wider uppercase shadow-sm">
+              RANK: SUO
+            </span>
+            <span class="bg-red-50 text-red-700 border border-red-200 text-xs font-extrabold px-3 py-1 rounded-lg tracking-wider uppercase">
+              BLOOD: <strong class="text-red-800">O+</strong>
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-extrabold px-3 py-1 rounded-lg">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              VERIFIED CADET
+            </span>
+          </div>
+
+          <!-- Cadet Name + Single Blinking Verified Tick -->
+          <div class="mt-3 flex items-center justify-center sm:justify-start gap-2">
+            <h2 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">NITIN TIWARI</h2>
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-blue-600 shrink-0 animate-verified-tick" viewBox="0 0 24 24" fill="currentColor" aria-label="Verified">
+              <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg>
+          </div>
+
+          <!-- Regimental Number Box -->
+          <div class="mt-2.5 inline-flex items-center gap-2 bg-slate-100 border border-slate-200 px-3.5 py-1.5 rounded-xl">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">REGTL NO:</span>
+            <span class="font-mono-id text-sm sm:text-base font-extrabold text-blue-950 tracking-wider">MP2024SDIA3460188</span>
+          </div>
+
+          <!-- Validity Strip -->
+          <div class="mt-4 pt-3 border-t border-slate-100 grid grid-cols-2 gap-3 max-w-md mx-auto sm:mx-0">
+            <div class="bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2">
+              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Valid From</p>
+              <p class="text-xs sm:text-sm font-black text-slate-900 mt-0.5">15-DEC-2026</p>
+            </div>
+            <div class="bg-red-50/70 border border-red-200/80 rounded-xl px-3 py-2">
+              <p class="text-[10px] font-bold text-red-500 uppercase tracking-wider">Valid Till</p>
+              <p class="text-xs sm:text-sm font-black text-red-700 mt-0.5">30-DEC-2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Structured Personal & Emergency Grid -->
+      <div class="relative z-10 bg-white/95 backdrop-blur-sm border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-sm">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+          <h3 class="text-xs font-black uppercase tracking-widest text-blue-950 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+            Additional Details & Emergency Contacts
+          </h3>
+          <span class="text-[11px] font-semibold text-slate-400 hidden sm:inline">Unit Record Verified</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <!-- Father / Guardian -->
+          <div class="sm:col-span-2 bg-slate-50/80 border border-slate-200/70 rounded-xl p-3.5">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Father's / Guardian's Name</p>
+            <p class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5">BIPIN KUMAR TIWARI</p>
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="bg-slate-50/80 border border-slate-200/70 rounded-xl p-3.5">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Date of Birth</p>
+            <p class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5">3-MAY-2006</p>
+          </div>
+
+          <!-- Cadet Contact -->
+          <a href="tel:7225088565" class="group bg-slate-50/80 hover:bg-blue-50/60 border border-slate-200/70 hover:border-blue-300 rounded-xl p-3.5 transition">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider flex items-center justify-between">
+              <span>Contact No.</span>
+              <span class="text-[10px] text-blue-600 font-bold group-hover:underline">Call ↗</span>
+            </p>
+            <p class="font-mono-id text-sm sm:text-base font-extrabold text-slate-900 mt-0.5">7225088565</p>
+          </a>
+
+          <!-- Emergency Contact -->
+          <a href="tel:9826326273" class="group bg-red-50/70 hover:bg-red-100/70 border border-red-200 rounded-xl p-3.5 transition">
+            <p class="text-[10px] font-bold text-red-600 uppercase tracking-wider flex items-center justify-between">
+              <span>Emergency Contact</span>
+              <span class="text-[10px] text-red-700 font-bold group-hover:underline">SOS ↗</span>
+            </p>
+            <p class="font-mono-id text-sm sm:text-base font-extrabold text-red-700 mt-0.5">9685772594</p>
+          </a>
+
+          <!-- Residential Address -->
+          <div class="sm:col-span-2 lg:col-span-3 bg-slate-50/80 border border-slate-200/70 rounded-xl p-3.5">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Residential Address</p>
+            <p class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5">66, INDRAPURI COLONY INDORE (M.P)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Instructions Footer -->
+    <footer class="bg-slate-900 text-slate-300 px-5 sm:px-8 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+      <p class="leading-relaxed">
+        <strong class="text-amber-400 uppercase tracking-wider">Instructions:</strong> 
+        <span>This identity card is official property of the National Cadet Corps. If found, please return to the nearest NCC Unit Headquarters or Police Station.</span>
+      </p>
+      <span class="font-mono-id text-[11px] text-slate-400 shrink-0">2 MP ARMOURED SQN</span>
+    </footer>
+  </article>
+
+</body>
+</html> 
